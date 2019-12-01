@@ -18,7 +18,7 @@ def gsheet_to_df(svc_acct_path,wb_name):
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 
     # Build credentials
-    creds = ServiceAccountCredentials.from_json_keyfile_name(svc_acc_path, scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name(svc_acct_path, scope)
 
     # Build client with
     client = gspread.authorize(creds)
